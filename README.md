@@ -47,19 +47,19 @@
 
 ### 2. Commit the changes and add a well defined readme for your project
 
-### 3. Raise a pull request and wait for Pull Request to merge
+### 3. Raise a pull request and wait while the Pull Request to merge
 
 ### 5. Celebrate - you've done your first pull request!!
 
 ```py
 '''
-always make more then 4 pull request
-lets you have made only 4 pull request to different projects
-but one project is excluded from hackoctoberfest event then your pull request will not be count and 
+Atleast 4 valid pull request are required to be eligible for the T-Shirt giveaway. 
+The 4 pull request should be made on different projects
+If one project is excluded from hackoctoberfest event then your pull request will not be count and 
 then you have remains 3 valid pull request if these projects is not excluded.
-if you fail to make 4 pull request then you cant get swags or t-shirts.
-i will recommend you make pull request to your own repo which is very very saffest side for you..
-keep in mind that repo has hacktoberfest topic..
+If you fail to make 4 pull request then you cant get swags or t-shirts.
+I would recommend you make pull request to your own repo which would put you on the safer side.
+keep in mind that repo has hacktoberfest topic.
 '''
 ```
 
