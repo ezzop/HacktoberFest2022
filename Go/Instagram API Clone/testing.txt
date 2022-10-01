@@ -1,0 +1,21 @@
+http://localhost:4000/users
+http://localhost:4000/users/
+http://localhost:4000/posts
+http://localhost:4000/posts/users/
+http://localhost:4000/posts/users/&limit=3
+
+
+
+{
+    "name": "Ayan Sadhukhan",
+    "email": "ayansadhukhan@gmail.com",
+    "password": "abcd123456" 
+}
+
+
+{
+    "User": "6161d84eb9e3d56b2b251d86",
+    "Caption": "Uncertain Life-1",
+    "Image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fsea%2F&tbnid=L8xfQakH9a8tJM&vet=12ahUKEwiVgNaKu73zAhVMjEsFHRIcDOcQMygBegUIARDKAQ..i&docid=QG4MQQA3E95exM&w=771&h=480&q=image&ved=2ahUKEwiVgNaKu73zAhVMjEsFHRIcDOcQMygBegUIARDKAQ" 
+}
+
