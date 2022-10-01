@@ -49,7 +49,8 @@
 
 ### 3. Raise a pull request and wait while the Pull Request to merge
 
-### 5. Celebrate - you've done your first pull request!!
+### 4
+. Celebrate - you've done your first pull request!!
 
 ```py
 '''
