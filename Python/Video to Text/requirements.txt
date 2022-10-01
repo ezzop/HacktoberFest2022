@@ -1,0 +1,4 @@
+torch==1.10.1
+flask==2.0.2
+youtube_dl==2021.12.17
+git+https://github.com/Cupcakus/pafy
