@@ -43,13 +43,13 @@
 
 # How to make your first Pull Request
 
-## 1. Add the relevant Code to the forked and cloned repository
+  ### 1. Add the relevant Code to the forked and cloned repository
 
-## 2. Commit the changes and add a well defined readme for your project
+### 2. Commit the changes and add a well defined readme for your project
 
-## 3. Raise a pull request and wait for Pull Request to merge
+### 3. Raise a pull request and wait for Pull Request to merge
 
-## 5. Celebrate - you've done your first pull request!!
+### 5. Celebrate - you've done your first pull request!!
 
 ```py
 '''
