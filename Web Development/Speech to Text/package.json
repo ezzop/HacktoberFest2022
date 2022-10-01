@@ -1,0 +1,26 @@
+{
+  "name": "speech_to_text_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nicolausmaximus/Speech_to_Text_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolausmaximus/Speech_to_Text_API/issues"
+  },
+  "homepage": "https://github.com/nicolausmaximus/Speech_to_Text_API#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7"
+  }
+}
