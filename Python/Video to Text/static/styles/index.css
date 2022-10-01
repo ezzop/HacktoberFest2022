@@ -1,0 +1,83 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#header {
+    font-size: 2.75rem;
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.submit-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    width:200px;
+    border-radius:25px;
+    border:1px solid #a19f9f;
+    background-color: #ffffff;
+}
+
+.submit-text-bar{
+    background-color: #ffffff;
+    height:30px;
+    border:none;
+    width:100px;
+    font-size:16px;
+    outline: none; 
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    background-color: #ffffff;
+}
+
+.search-bar{
+    background-color: #ffffff;
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none; 
+}
+
+
+#loading {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    display: none;
+    background: url(/static/spinner.gif) no-repeat;
+    cursor: wait;
+}
+
+#transcript  {
+    /* padding: 0px 100px !important; */
+    max-width: 800px !important;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Speech2Text</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href= "{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="body">
+            <h1 id="header">Speech2Text</h1>
+            <form class="submit-form" action="/" method="POST">
+                <p style="margin-bottom: 1rem">
+                    Paste YouTube link here...
+                    <div class="bar">
+                        <input class="search-bar" type="text" name="youtube_link" />
+                    </div>
+                </p>
+                <div class="submit-bar">
+                    <input class="submit-text-bar" type="submit" value="Submit" onclick="loading();"/>
+                </div>
+            </form>
+            <div id="loading"><img src="{{ url_for('static',filename='spinner.gif') }}"></div>
+            {% if video %}
+            <div class="container" >
+                <div id="content">
+                    <h2> YouTube Video Details </h2>
+
+                    <p>{{ youtube_link }}</p>
+
+                        <img src="{{ video.thumb }}"/>
+                        <p>Title: {{ video.title }} </p>
+                        <p>User: {{ video.username }} </p>
+                        <p>Views: {{ video.viewcount }} </p>
+                        <p>Likes: {{ video.likes }} </p>
+                        <p>Duration: {{video.duration}} </p>
+
+                    <p>{{ loading }}</p>
+                    <h2> Transcript </h2>
+                    <div id="transcript">
+                        <span>{{ transcript }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div class="container">
+                <p></p>
+            </div>
+            <div class="container">
+                <p></p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>         <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+
+        <script type="text/javascript">
+            let loaded = false
+            function loading() {
+                $("#loading").show()
+                $("#content").hide()
+            }
+        </script>
+        
+    </body>
+</html>
