@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0a1e20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_app.RegistervController">
+   <children>
+      <ImageView fitHeight="415.0" fitWidth="288.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@pics/111.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="dosenum" layoutX="324.0" layoutY="147.0" prefHeight="35.0" prefWidth="207.0" promptText="Select Dose number" style="-fx-background-color: ffce38;" visibleRowCount="2" />
+      <DatePicker fx:id="type_date_r" layoutX="324.0" layoutY="200.0" prefHeight="41.0" prefWidth="207.0" promptText="Select Date" style="-fx-background-color: ffce38;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cowinlogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_logout" layoutX="413.0" layoutY="37.0" mnemonicParsing="false" onAction="#Logout" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: ffce38;" text="Log Out" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_registerv" layoutX="381.0" layoutY="263.0" mnemonicParsing="false" onAction="#Register" style="-fx-background-color: ffce38;" text="Register">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="vaccinename" layoutX="324.0" layoutY="90.0" prefHeight="35.0" prefWidth="207.0" promptText="Select Vaccine" style="-fx-background-color: ffce38;" />
+   </children>
+</AnchorPane>

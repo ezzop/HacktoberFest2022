@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="549.0" style="-fx-background-color: #002a2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_app.AdminpageController">
+   <children>
+      <HBox layoutX="22.0" prefHeight="78.0" prefWidth="494.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="-22.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_registered" mnemonicParsing="false" onAction="#RegisteredPaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #3fc474;" text="Registered" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_vaccinated" mnemonicParsing="false" onAction="#VaccinatedPaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #203b3d;" text="Vaccinated" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="registered_pane" layoutX="3.0" layoutY="90.0" prefHeight="299.0" prefWidth="555.0" visible="false">
+         <children>
+            <TableView fx:id="Table_r" editable="true" layoutX="7.0" layoutY="42.0" prefHeight="247.0" prefWidth="528.0" style="-fx-background-color: #ffe38e;">
+               <columns>
+                  <TableColumn fx:id="column_emailr" prefWidth="85.0" text="email" />
+                  <TableColumn fx:id="column_dose1r" prefWidth="65.0" text="dose1" />
+                  <TableColumn fx:id="column_date1r" prefWidth="75.0" text="date1" />
+                  <TableColumn fx:id="column_vaccine1r" prefWidth="75.0" text="vaccine1" />
+                  <TableColumn fx:id="column_dose2r" prefWidth="75.0" text="dose2" />
+                  <TableColumn fx:id="column_date2r" prefWidth="75.0" text="date2" />
+                  <TableColumn fx:id="column_vaccine2r" prefWidth="75.0" text="vaccine2" />
+               </columns>
+            </TableView>
+            <Label fx:id="label_rcount" layoutX="244.0" layoutY="2.0" text="Label" textFill="#ffce38">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_logout" layoutX="9.0" layoutY="391.0" mnemonicParsing="false" onAction="#Logout" prefHeight="34.0" prefWidth="132.0" style="-fx-background-color: ffce38;" text="Log Out" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="408.0" AnchorPane.topAnchor="391.0">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="vaccinated_pane" layoutX="3.0" layoutY="90.0" prefHeight="299.0" prefWidth="555.0" visible="false">
+         <children>
+            <TableView fx:id="Table_v" editable="true" layoutX="7.0" layoutY="42.0" prefHeight="247.0" prefWidth="528.0" style="-fx-background-color: #ffe38e;">
+               <columns>
+                  <TableColumn fx:id="column_emailv" prefWidth="85.0" text="email" />
+                  <TableColumn fx:id="column_dose1v" prefWidth="65.0" text="dose1" />
+                  <TableColumn fx:id="column_date1v" prefWidth="75.0" text="date1" />
+                  <TableColumn fx:id="column_vaccine1v" prefWidth="75.0" text="vaccine1" />
+                  <TableColumn fx:id="column_dose2v" prefWidth="75.0" text="dose2" />
+                  <TableColumn fx:id="column_date2v" prefWidth="75.0" text="date2" />
+                  <TableColumn fx:id="column_vaccine2v" prefWidth="75.0" text="vaccine2" />
+               </columns>
+            </TableView>
+            <Label fx:id="label_vcount" layoutX="244.0" layoutY="2.0" text="Label" textFill="#ffce38">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
