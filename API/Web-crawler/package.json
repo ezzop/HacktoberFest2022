@@ -1,0 +1,30 @@
+{
+  "name": "stack_crawl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolausmaximus/Web-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolausmaximus/Web-crawler/issues"
+  },
+  "homepage": "https://github.com/nicolausmaximus/Web-crawler#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "csv-stringify": "^6.0.5",
+    "csv-writer": "^1.6.0",
+    "follow-redirects": "^1.14.6",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "pretty": "^2.0.0",
+    "request": "^2.88.2"
+  }
+}

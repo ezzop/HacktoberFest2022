@@ -1,0 +1,210 @@
+Question,Description,Views,UpVotes,Answers
+Conditional borders troubleshooting (Google sheets),"I have a dataset with four different treatment types in blocks of 5 or 7 rows. I want to add borders between each treatment set, so I tried modifying [Tedinoz's code][1]. The problem is that this code ...",2 ,0,0
+Cant connect with H2 in memory DB. cant see the reason why,"Is anyone using H2 in memory database? I want to use it in combination with springboot, only when I go to the link of the database I apparently get another login screen. As far as I know nothing is ...",2 ,0,0
+Distributed transaction manager for c++,Currently our c++ based applications use ibm DB2 and IBM MQ. IBM MQ acts as xa transaction manager. We are migrating database to Postgresql. However we are not able to get Postgresql participate xa ...,2 ,0,0
+how to convert Ikea light bulb XY colorspace to RGB,"i got a similar problem like this one:
+How to convert CIE color space into RGB or HEX color code in PHP
+i got an ikea light bulb which gives me a CIE XY color value.
+I would like to convert it into ...",5 ,0,0
+access denied for user aws secrets manager nodejs,"I have the code below in nodejs that retrieves a secret from aws secrets manager. I am currently getting the error:
+""Access denied for user 'admin'@'pool-123-72-191-12.nfrvne.fios.verizon.net' (...",5 ,0,0
+How to inline React component and related tailwindCSS classes,"I have to send some emails and I simply want to re-use as much code/knowledge as possible (just because), for this I want to render a React component to raw HTML with inline classes.
+I have managed to ...",4 ,0,0
+Dataclass and Callable Initialization Problem via Classmethods,"I found this weird behaviour where I don't know if I am the problem or if this is a python / dataclass / callable bug.
+Here is a minimal working example
+from dataclasses import dataclass
+from typing ...",2 ,0,0
+Combining Kafka Events that are produced in very distinct moments in time using Kafka Streams,"Before I start, it's important to mention that I'm new to Kafka Streams and I'm not a Java programmer. All I know is from reading lots of articles in the past few days and going through some examples ...",2 ,0,0
+Need help understanding what is going on in this subquery,"I'm new to SQL and while I understand the basics, I'm trying to improve my skills by practicing on LeetCode. I came across the below problem and I'm trying to understand what is going on in the ...",5 ,0,0
+How do I recognize swipe events in React?,"I'm currently developing a React app and I want to detect swipe events (left, right) on a div element (on mobile devices).
+How do I achieve this without any additional libraries?",3 ,0,1
+mongorestore in Dockerfile not locating dump files,"Been trying to land this Dockerfile to work properly but seems there's no human way for me to do so.
+The directory where the Dockerfile is placed looks like this:
+my_dir
+  |
+  |- Dockerfile
+  |- ...",4 ,0,0
+"Remove ""|"" and ""Phone:"" from large Python list","I've been working on something for a week. A PDF was converted automatically to XML (ERAS medical program details), a very large and imperfect result. The problem is that this strange result returned ...",16 ,0,0
+Is it possible to use Elastic Enterprise Search through NEST clint in C#,"I want to use Elastic Enterprise Search in C#, is it possible to do it with the NEST client?
+Enterprise Search (also known as App Search) offers powerful functionalities for search engines on the web ...",3 ,0,0
+Merge objects into array,"I want to convert multiple objects with same id as test to array of objects
+Actual:
+const array= [
+    { ""test"": 1},
+    { ""test"": 2},
+ { ""test"": 3},
+ { ""test"": ...",12 ,0,1
+JAXB Unmarshalling to Java POJO,I want to convert this XMl into java Object but nit getting how to make POJO class for it. I can not change this xml because it is comning from remote server as a request and I need all information ...,5 ,0,0
+React-hook-form v7 does not update form value on submit,"I have a dynamic form, where the values ​​come from the backend and so I create the form...
+However, I also have a switch case, where I change the input mask when the user switches the interface.
+Well....",4 ,0,0
+How do I get values from an object using dot notation,"How do I get values from an object using dot notation when I have a variable that changes.
+console.log(`${getData}.BUTTON_${item.UUID}`);
+// outputs: [object Object].BUTTON_1 
+
+In the object is a ...",9 ,0,1
+TryGetValue on a null dictionary,"I'm trying to use TryGetValue on a Dictionary as usual, like this code below:
+Response.Context.Skills[MAIN_SKILL].UserDefined.TryGetValue(""action"", out var actionObj)
+My problem is... the ...",7 ,0,0
+Does reading a file through a Python script (or any other code) change the file's Last-Time-Access properties?,"I have written a Python program that reads multiple files and looks for some information.
+Here is the command that I used:
+try:
+    with open(file_path, ""r"") as file_object:
+        # do ...",4 ,0,0
+Why some Java lines are not executed in order? Async?,"I have the following block of code -I am developing an APP which is based on JPA and Hibernate apart from Spring.
+ADto aconcept = new ADto();
+                        aconcept = aservice.buscarCodigo(a....",9 ,-1,0
+how to get attributes from this javascript array,how to get attribute title from this array which has only one data record,4 ,0,0
+Extract only files with specific extension via bash,"For a first time I need to create an .sh for do something. My aim is to unzip a lot of zip folders, so I've wrote the script below:
+for zipfiles in /downloads/*.zip; do unzip $zipfiles; done
+
+I can ...",3 ,0,0
+reading a string from a binary file in c,"so I'm trying to read a string back from a binary file that I've created,however, I'm unable to do so, I tried reading the string character by character, as well as a whole but none of these two ...",6 ,0,0
+Problem with the concept of scope in Dependency injection when using EF,I have a problem with the concept of scope in dependency injection. I have registered my db context as a scope and And I save the user activity in a table using an asynchronous method without using &...,6 ,0,0
+Multiple keys one value,"I'm trying to use dictionary with multiple keys assigned to one value.
+For example:
+my_arg = 'MARY'
+my_dict = {('Al','AMY','45'): 'ZONE1', 
+           (56,'LO','MARY','ELM'): 'ZONE2',
+           (75,'...",11 ,0,0
+Error logs not appearing in cypress environment in rails,I have a rails application and I have different environment files for it. I am trying to get error logs in the cypress log file (cypress environment) but fail to do so. Same error logs appear in ...,4 ,0,0
+(Google Play) App dropped to rock bottom in multiple countries / top-lists after simple metadata change in a single country,"Background info: Our game has been pretty stable for months in the top 100 roleplay category in over 55 countries while we've been hovering in the top 10 in around 5-8 countries.
+Problem: After some ...",4 ,0,0
+Python list to Javascript in HTML file,I have a Python list with dictionary objects that I have to use inside a JS function. I can pass it to the frontend from Flask with Jinja2 but inside the JS code the apostrophes are transforming into ...,10 ,0,0
+FactoryBot gets ActiveRecord::AssociationTypeMismatch for namespace models,"There are two models in Api:: namespace:
+module Api
+  class Variant < ApplicationRecord
+    belongs_to :category
+  end
+
+  class Category < ApplicationRecord
+    has_many :variants, dependent: :...",2 ,0,0
+"How to make this integer a ""true"" constant?","I have a constant integer, steps, which is calculated using the floor function of the quotient of two other constant variables. However, when I attempt to use this as the length of an array, visual ...",24 ,0,2
+Exception thrown when trying to access a protected variable from a child class after a dynamic casting,"I am trying to learn about dynamic casting in C++.
+So I have developed 2 classes to test some things related to dynamic casting:
+class Entity {
+protected:
+    int x = 10;
+public:
+    virtual void f1() ...",7 ,0,0
+How to get mean of exams by client with 2 tables?,"I know a little bit of sql, only the basic, now I need to create a analytic query but can't do this yet.
+I have 2 tables on my db oracle, client and exams:
+I am tried a lot of ways to get the mean of ...",4 ,0,0
+Search function problems in Javascript,"Im quite new to coding, but Ive finished lots on freecodecamp and made som simple guess games I learned on mozilla.developer.
+Im using visualStudioCode and practicing.
+Problem: I want to write a first ...",8 ,0,0
+Delete row from Realm via SwiftUI occurs exception 'Object has been deleted or invalidated.',"I trying to delete row from SwiftUI list which load data from Realm DB, it's implemented like here:
+struct MyView: View {
+    private let realm = try! Realm()
+    
+    var body: some View {
+           ...",5 ,0,0
+AWS DynamoDB: What is the best way to store birthday dates? UTC?,"Overview
+I have a users in the United States, Canada, Mexico, Germany, Australia, Denmark, and Switzerland. I want each each user to add their birthday (day/month/year) from the mobile app.
+Question
+...",6 ,0,0
+Take a random sample from a dataframe making sure that I will keep at least one row for each column that has a value different from zero,"So I have a dataframe that looks like this:
+Player
+Points
+Assists
+Rebounds
+Steals
+Blocks
+Wins
+Bryant
+35
+5
+5
+1
+0
+1
+James
+24
+11
+9
+2
+1
+0
+Durant
+31
+2
+12
+0
+0
+0
+Curry
+29
+4
+2
+2
+0
+0
+Harden
+13
+12
+0
+0
+1
+0
+...",7 ,0,0
+how to use gtkwave when running ubuntu from windows command prompt (ERROR: Is DISPLAY env var/xhost set),I installed an X server application but gtkwave command is giving me the same error so can anyone give me a detailed description on what to do?,3 ,0,0
+Angular 12. Is it possible to call child component via variable as component selector?,"For instance, I have an array in parent component:
+arr = [
+  'app-component-one',
+  'app-component-two',
+  'app-component-three'
+]
+
+And I need to emplement something like this in parent component ...",9 ,0,0
+Replace function not working properly - Python,"I am trying to make a decoder software for NDev's ENcoder software, but the replace function is not working properly, here is my code:
+binToChar = {
+  1:""a"",
+  10:""b"",
+  11:""c&...",17 ,0,0
+Wrap in quotes all fields of an object with VIM substitute command,"I want to convert
+{
+  foo:""bar"",
+  hello:""world"",
+}
+
+into
+{
+  ""foo"":""bar"",
+  ""hello"":""world"",
+}
+
+I'm thinking about a substitute commande ...",6 ,0,1
+"I am having trouble with unity3D with the mirror networking API, i have tried using syncvar with health but that proves to not work unfortunately","my problem is that whenever someones health goes down nothing happens(Unless its the player hosting the server)
+using System.Collections.Generic;
+using UnityEngine;
+using Mirror;
+public class ...",4 ,0,0
+Nodejs AWS S3 createPresignedPost returns error Cannot read properties of undefined (reading 'endsWith'),"I have the following code:
+const { S3Client } = require('@aws-sdk/client-s3');
+const { createPresignedPost } = require('@aws-sdk/s3-presigned-post');
+
+router.post(
+  '/sign-s3', async (req, res, next) ...",3 ,0,0
+Places API Photo Requests Usage Cost,I'm planning on using the Google Places API to display multiple images for several local business on a website and I have some problems with what I'm reading about API usage while keeping within terms ...,3 ,0,0
+How to change port on built ASP .NET API,I'm trying to make a simple REST API with ASP .NET and when i run the API on my computer the port is whatever i specify. However when it is published and run on my server it is always port 5000. ...,8 ,0,0
+pylint: unable to import conda installed modules,"I have a package I'm developing in a Conda virtual environment that runs fine and imports all my installed modules as needed. I'm trying to use a pylint git pre-commit hook, but getting E0401 import-...",3 ,0,0
+Production Code's General try-catch Eats nUnit Assertion Exceptions Causing the Failing Tests Pass,"I understand that nUnit failed Assert statements throw an exception, and that's how Test runners detect an error has occurred. My problem is that there is a general try-catch block in the production ...",4 ,0,0
+ISO8583 Unpack Issue,"How I will unpack ISO message using JPOS library in java?
+here is the sample ISO message.
+0800. ..............1224190516424997001003      
+Sample Hex Dump:
+30 38 30 30 82 20 01 00  00 00 00 00 04 00 ...",4 ,0,0
+How do I use the `node inspect` debugger on an application that uses standard input?,"I'm trying to track down the source of an error in a Node application that doesn't come with a stack trace.
+The node inspect debugger supports a breakOnException command that I think will help me.
+But ...",4 ,0,0
+HttpClient Exception 'The response ended prematurely' when actual response length not match Content-Length header,"How I can fix HttpClient Exception when the actual response length is smaller than Content-Length header
+
+The response ended prematurely, with at least 4508 additional bytes expected.
+The response ...",5 ,0,0
+Having issues with generating a proper decimal placing with my code for calculator. Decimals in the tenths place starts adding instead,"private void ClickedOnButton(int i) {
+    String current;
+    if (decimal ==false) {
+        current = txtBox.getText();
+        current1=Double.valueOf(current);
+        current1=current1*10+i;    
+  ...",3 ,0,0
