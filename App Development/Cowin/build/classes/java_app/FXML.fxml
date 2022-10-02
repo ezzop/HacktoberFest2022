@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="500.0" style="-fx-background-color: #002a2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_app.FXMLController">
+   <children>
+      <HBox layoutX="3.0" layoutY="14.0" prefHeight="78.0" prefWidth="494.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#LoginPaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #3fc474;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#SignupPaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #203b3d;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane_login" layoutY="109.0" prefHeight="290.0" prefWidth="500.0" style="-fx-background-color: #093639;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <PasswordField fx:id="txt_password" layoutX="287.0" layoutY="117.0" prefHeight="40.0" prefWidth="188.0" promptText="Enter password" />
+            <TextField fx:id="txt_email" layoutX="287.0" layoutY="64.0" prefHeight="40.0" prefWidth="188.0" promptText="Enter email id" />
+            <ComboBox fx:id="type" layoutX="287.0" layoutY="26.0" prefHeight="26.0" prefWidth="188.0" promptText="Choose Type" />
+            <Button fx:id="btn_login" layoutX="287.0" layoutY="170.0" mnemonicParsing="false" onAction="#Login" prefHeight="41.0" prefWidth="188.0" style="-fx-background-color: #3fb970;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="92.0" fitWidth="229.0" layoutX="14.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/cowinlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_signup" layoutY="79.0" prefHeight="297.0" prefWidth="500.0" style="-fx-background-color: #0a1e20;">
+         <children>
+            <PasswordField fx:id="txt_password_up" layoutX="287.0" layoutY="108.0" prefHeight="40.0" prefWidth="188.0" promptText="Enter password" />
+            <TextField fx:id="txt_email_up" layoutX="287.0" layoutY="47.0" prefHeight="40.0" prefWidth="188.0" promptText="Enter email id" />
+            <Button fx:id="btn_signup" layoutX="287.0" layoutY="169.0" mnemonicParsing="false" onAction="#Register" prefHeight="41.0" prefWidth="188.0" style="-fx-background-color: #3fb970;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="92.0" fitWidth="229.0" layoutX="14.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/cowinlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

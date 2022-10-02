@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0a1e20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_app.CPanelController">
+   <children>
+      <Text fill="WHITE" layoutX="231.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="162.2265625" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0">
+         <font>
+            <Font name="Times New Roman Bold" size="38.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="145.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cowinlogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="146.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter Your Details">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_name" layoutX="302.0" layoutY="150.0" prefHeight="26.0" prefWidth="278.0" promptText="Enter your name" style="-fx-background-color: white;" />
+      <TextField fx:id="txt_phone" layoutX="302.0" layoutY="200.0" prefHeight="26.0" prefWidth="278.0" promptText="Enter your phone-number" style="-fx-background-color: white;" />
+      <TextArea fx:id="txt_address" layoutX="302.0" layoutY="250.0" prefHeight="60.0" prefWidth="278.0" promptText="Enter your address" style="-fx-background-color: white;" />
+      <ImageView fitHeight="240.0" fitWidth="188.0" layoutX="18.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/Illustration.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_submit_details" layoutX="381.0" layoutY="329.0" mnemonicParsing="false" onAction="#Details" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #3fb970;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
