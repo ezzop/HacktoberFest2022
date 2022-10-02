@@ -1,0 +1,148 @@
+Question,Description,Views,UpVotes,Answers
+Need help regarding dynamic allocation of memory in trees c++,"here is a short snippet of the code , im not really getting what is happening here because of the double pointer(pointer to pointer), im gonna figure it out later on but right now , im facing a error ...",6 ,0,0
+Pytrends: Normalize data for a period of one year,"I want to extract Google Trends data via pytrends for one year in the past. If I use the request for the whole year I get weekly data, but I would want to have it daily. One possibility would be to ...",2 ,0,0
+How can I power up my character? (unity 2d),"When my character touches the golden floor, I want him to gain special power for ten seconds. Special power is 3x point addition and 2x jumping force. I tried to use Coroutines but it doesn't work how ...",2 ,0,0
+how to avoid full table scan when joining on one foreign key,"how to avoid full table scan when joining on one foreign in key below is my sql query when i use explain select it show the query is scanning all the table even with a where clause
+SELECT ...",2 ,0,0
+Unable to use fake.Clientset as a value of kubernetes.Interface,"I am trying to write some tests for a client-go app.
+My method signature is the following
+createJob(clientset *kubernetes.Interface)
+
+So I am mocking like this:
+import (
+   testclient ""k8s.io/...",2 ,0,0
+How does connect()'ing a bind()'ed socket in a forked process affect the socket in the parent?,"I am implementing a reliable, connection-oriented application over UDP (uni assignment). It is required that the server, after it receives an initial packet from the client and acknowledges it, ...",6 ,0,0
+Prefect image processing workflow (on Dask). Workers accumulating memory undefinitely,"New to Prefect. Trying to use it to process a large dataset of 3d images.
+It works nicely for a small subset of the dataset, but when I try it on the whole dataset I find that  ""Unmanaged memory&...",2 ,0,0
+creating multiple blog posts using divs javascript,"I used the following code that allows for creating a ""blog post"" that is composed of multiple divs. I want that every time I click the button a new blog post is created but what actually ...",2 ,0,0
+Combine rows within the same list of a list,"I have a list that contains two lists in which the first has three elements and the second has two elements. I want to row combine the elements from the same list. Here are some data:
+list1 <- list(...",9 ,0,1
+crontab doesn't run js script,"I open
+crontab -e
+
+Then I put:
+* * * * * ~/.nvm/versions/node/v17.3.0/bin/node /home/ec2-user/app/packages/package1/test.js
+
+I save the file, it immediatelly says that it installed the cron. So I ...",7 ,0,0
+Combing INSERT and CASE SQL queries,Here are a couple of SQL queries that I am trying to either write as a single query or two queries. I have tried various possibilities that I could think of but non worked. I have a blank table tbl_Z. ...,5 ,0,0
+Error: nested select statement: single-row subquery returns more than one row,"I am trying to fetch results from a query like:
+Select abc, def,
+
+     (Select distinct ghi from table1 where condition1, condition2)
+    From table1
+    Where condition3, condition4.
+
+It throws the ...",5 ,0,0
+Hibernate merge swapping columns,"I'm using mysql 5.7 (on RDS),
+and java 8 oracle with hibernate:
+hibernate-core 4.3.8 and hibernate-jpa-2.1-api 1.0.2.
+I have 3 classes :
+class,student,address.
+class has one to many students.
+student ...",3 ,0,0
+GSI capacity mode will be on-demand when primary Table has on-demand capacity mode?,"GSI capacity mode will be on-demand when primary Table has on-demand capacity mode?
+I am not able to find this information on the AWS documentation. Though what I am able to find is: RCU and WCU(...",3 ,0,0
+npx create-react-app network connectivity error,"npm ERR! code ERR_SOCKET_TIMEOUT
+
+npm ERR! errno ERR_SOCKET_TIMEOUT
+
+npm ERR! network Invalid response body while trying to fetch https://registry.npmjs.org/eslint: Socket timeout
+npm ERR! network ...",3 ,0,0
+Converting SVG with Flutter Shape Maker Generates undefined name NaN,"Hi flutter/stack noob arriving,
+Customized some SVG icons and used the Flutter Shape Maker tool to convert them.
+Most of them work, though my hamburger icon does not properly convert.
+The tool ...",3 ,0,0
+How to delete margin from item when wrapping in React native?,"I have the first View with flexWrap: 'wrap'. How can i delete the marginLeft from <View style={{ marginLeft: 16 }}> when it goes to the line ?
+
+
+    <View style={{
+     flexDirection: 'row',...",3 ,0,0
+"Is there a way to calculate the standard deviation of a given range in excel, based on a cell entry in another column?",I am trying to use a specific entry in excel that will find all matches in a column and calculate the standard deviation of the range for data in another column that match.  Let's say I have the entry ...,3 ,0,0
+Why is htaccess content visible on page?,"I'm looking at a wordpress installation for a friend and I can see that loading any page shows the htaccess contents at the top of every page.
+Viewing source on all pages shows the content is there ...",7 ,0,0
+How to get data from a model outside of a function in a controller,"So I have created an after signup wicked wizard and I am trying to get the wizard steps dynamically from the account model DB but I can't see any easy way to do this.
+I think the code executed outside ...",6 ,0,0
+Not able to send form data using axios in Nodejs?,"I am trying to make POST request with axios but getting 400 bad request error message. I tried same request in POSTMAN but it worked correctly any idea what I am missing?
+Code:
+const ...",7 ,1,0
+Pool exception in Spring data jpa,"When my app is trying to connect to DB I am getting this error
+From Oracle SQL developer I am successfully able to connect but from spring it's getting refused
+Is it because of timeout something? I ...",5 ,0,0
+"Stuck on Firebase error message: ""createUserWithEmailAndPassword is not a function''","I (a very novice developer) am trying to create a login screen for my application with Expo and Firebase. However, I keep getting one error message I cannot seem to fix.
+""_firebase.auth....",6 ,0,0
+"Symfony, how to define homepage route","I have to excuse myself as I am pretty new to Symfony
+I created a HomeController to show my homepage
+class HomeController extends AbstractController
+{
+    #[Route('/{page?}', name: 'home')]
+public ...",3 ,0,0
+How to override built-in VSCode commands via an extension,"According to this issue comment, what I need should be this piece of code:
+vscode.commands.registerCommand('type', (args) => {
+  console.log(`type with args`, args)
+  return vscode.commands....",3 ,0,0
+Google Cloud Shell ssh with customer container image?,"Is it possible to use gcloud cloud-shell ssh with a
+custom Cloud Shell container image?",5 ,0,0
+How can I actually grab the data out of a running stream/websocket within a function?,"So I am quiet confused how to handle websockets/streams within a function in python.
+I have a python script that triggers a ws/stream which runs 24/7:
+# Initiate Class Instance
+stream = Stream(...",14 ,1,0
+Database error in django+mongodb objects.fiter with boolean field,"I am using djongo library to handle mongodb, but still getting database error while filtering queryset using a boolean field.
+
+Error: No exception message supplied,
+django.db.utils.DatabaseError
+
+from ...",5 ,0,0
+Python beautiful soup https: is missing from extracted img data-src,"I've following code which extracts the img tag and data-src from it, the extracted value doesn't have https: in it. I was wondering why? How to fix it?
+html
+<img .... class=""mainimage"" ...",8 ,0,0
+"When using the official Node docker images, should the node user run npm and node? Should we avoid root in build, dev, test or prod environments?","Before containerization, it was recommended we run node as an unprivileged user. Later versions of npm get angry when they run as root.
+What is the community consensus on running node and npm as root ...",8 ,-1,0
+plotting ROC AND PRC curve in python,"I have a problem with plotting ROC and PRC curve in time series data
+I scaled data with min_max scaler(0,1)
+the shape of data is :
+x_test.shape,y_test.shape,x_train.shape,y_train.shape
+
+((2904, 5, 1), ...",2 ,0,0
+pandoc and longtable print extra text,"I recently updated pandoc to version 2.16.2 and ran ""check for updates"" in miktex console v4.5 and many packages were updated.
+I had a working pdf document that uses the longtable miktex ...",2 ,0,0
+Wrap items to the next column when height is overflowing?,"I have a container with items inside it.
+This container has a height set. I'd like to wrap the items inside this container to a new column by maintaining the order of them to the next column. How do I ...",5 ,0,0
+Gmail user-agent different strings in order to understand google activity logs,"I'm completely green, but couldnt get any answer in any other place so far. If You could have a look on different user-agents requesting google services and explain me the difference between them ? ...",4 ,0,0
+iOS App build fails with undeclared identifier 'AVAudioSession',"I am building an iOS app. Trying to follow these instructions from an issue in a vendor library I added an import and a line of code to my AppDelegate.m:
+#import <AVFoundation/AVFoundation.h>
+
+.....",5 ,0,0
+Security in in-game NFT mint,"does anyone know how to create a secure in-game NFT mint? I think if we gave permission to users to create an NFT (this is the idea of the game - to assemble an NFT from different parts), it would be ...",7 ,0,0
+One checkbox to toggle all wont recognize the one i click (gets confused),"So, ive made one togglebox that has function to toggle all others when it is ticked/unticked. The problem is when i for example:
+1.togglebox [ticked]
+2.checkbox [ticked] --> show image
+3.checkbox [...",5 ,0,0
+Use LoDash orderBy with dynamic values for ascending or descending sort,"The LoDash orderBy function is pretty straightforward - you pass it the collection you want to sort, the properties you want to sort by, and then optionally whether the sort on those properties should ...",7 ,0,0
+Postgres DB | logrocket | pg_dump Access denied,I'm currently trying to do the logrocket migration from single server to a flexible server. The guide that I'm using is this one https://docs.logrocket.com/docs/azure-single-server-pg-96-to-flexible-...,4 ,0,0
+Implementing RLS/DRLS in SSAS Tabular vs Power BI,"I want to know the difference between implementing RLS or DRLS in SSAS vs Power BI.
+If we are implementing it in SSAS tabular should we implement it in the Power BI also ?
+We are using an SSAS tabular ...",5 ,0,0
+(Fivem vRP) Basic Market attempt to index a nil value (local 'gudz'),"i get this error at line 94 and i dont really know how to fix this error. if someone could help fix this error it would really help me.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''...",6 ,0,0
+How to retrieve associated CloudFront Distribution URL in Amplify+Terraform?,"Within Terraform, is it possible to retrieve the URL of an Amplify app's CloudFront Distribution?
+If I was to create a new Next.js app within the web console, there is an important 200 rewrite that ...",7 ,0,0
+find the answer to a math question in python as a string? [duplicate],"I am making a calculator GUI, and I need to calculate the answers. All the solutions use three variables (num1, num2, operation). But I would prefer a way to solve other problems such as 1+1+1 with ...",23 ,0,0
+"There are N people, numbered from 0 to N-1, playing a game [closed]","There are N people, numbered from 0 to N-1, playing a game. The K-th person is assigned the letter S[K].
+
+At the beginning the oth person sends a message, consisting of a single letter S[0], to the A[...",13 ,-4,0
+Error javascript in TinyMce editor? How about saving data using Name?,"I'm using tinyMce editor in my .Net Core project, but the scriptt function of the editor has an id.
+<script>
+        tinymce.init({
+            selector: 'textarea#default'
+        });
+    </...",3 ,0,0
+"Machine learning models SVM, Cubist and Neural network will run and never produce output in R?","Below is a screen shot of my cubist and SVM model using caret, Cubist, kernlab packages. The stop sign stays and output is never seen. Same thing with Neural network; just not shown in the screen shot....",4 ,0,0
+Hightlight all file tabs with code modifications in Eclipse,"In Eclipse, 'Quick Diff' from preferences can be used to highlight the Changes, Additions and Deletions in the 'Overview ruler' in editor.
+Also, colors for files in 'Project Explorer' can be changed ...",3 ,0,0
+"Is there a way to ""integrate"" the allocated string from php-extension-C enviroment, into PHP enviroment, without doing copy","F.x. in PHP extension we have such piece of code:
+PHP_FUNCTION(test) {
+    char *ptr;
+    size_t size_of_string=0;
+    
+    size_of_string=some_function_which_allocates_and_creates_some_big_string(ptr)...",6 ,0,0
+Where is the XR.IOS namespace?,This will be an easy question to answer but it's very important that I figure this out. I'm trying to implement iOS AR Multipeer Connectivity in Unity and most of the examples I'm seeing make use of a ...,5 ,0,0
