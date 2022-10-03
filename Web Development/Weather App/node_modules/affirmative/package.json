@@ -1,0 +1,41 @@
+{
+  "name": "affirmative",
+  "description": "Array of 'yes' words and phrases that express the user's agreement with a statement or request. Intended to be fun and useful for CLI prompts, web forms, etc.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/jonschlinkert/affirmative",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/affirmative",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/affirmative/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "bullets": "^0.1.1",
+    "mocha": "*"
+  },
+  "verb": {
+    "related": {
+      "list": [
+        "common-words",
+        "unique-words"
+      ]
+    },
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "options": {
+      "toc": false
+    }
+  }
+}
