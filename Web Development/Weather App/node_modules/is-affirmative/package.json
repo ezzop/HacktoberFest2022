@@ -1,0 +1,51 @@
+{
+  "name": "is-affirmative",
+  "description": "Returns true if a value is an `affirmative` value (from the affirmative lib). Useful for CLI prompts.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/is-affirmative",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/is-affirmative",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/is-affirmative/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "affirmative": "^0.1.1"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.5",
+    "mocha": "^2.3.4"
+  },
+  "keywords": [
+    "affirmative",
+    "cli",
+    "confirm",
+    "inquirer",
+    "prompt",
+    "question",
+    "truthy",
+    "yes"
+  ],
+  "verb": {
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "toc": false,
+    "related": {
+      "list": [
+        "affirmative"
+      ]
+    }
+  }
+}
