@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="412dp"
+    android:layout_height="180dp"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:barrierMargin="5dp"
+    app:cardBackgroundColor="#F8EA6F"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardUseCompatPadding="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <RelativeLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ImageVIew to display our Course Image-->
+
+
+        <!--Text View to display Course Name-->
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:text="TITLE" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="371dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/Title"
+            android:layout_alignStart="@+id/Title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/date"
+            android:textColor="#33691E"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
