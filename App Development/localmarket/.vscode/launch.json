@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+                "name": "localmarket",
+                "program": "lib/main.dart",
+                "request": "launch",
+                "type": "dart",
+                "args": [
+                        "--no-sound-null-safety"
+                    ]
+        }
+    ]
+    }        
