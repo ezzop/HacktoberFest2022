@@ -1,0 +1,20 @@
+.PartlyCloudyDayIconGroup{
+   .cls-1 {
+      fill: var(--sun-color);
+   }
+
+   .cls-1,
+   .cls-2 {
+      stroke: var(--foreground-color);
+      stroke-miterlimit: 10;
+   }
+
+   .cls-2,
+   .cls-4 {
+      fill: var(--foreground-color);
+   }
+
+   .cls-3 {
+      fill: var(--background-color);
+   }
+}

@@ -1,0 +1,208 @@
+.weather-history-enter, .weather-history-appear{
+   opacity: 0
+}
+.weather-history-enter-active, .weather-history-appear-active{
+   opacity: 1;
+   transition: opacity 500ms;
+}
+.weather-history-enter-done{
+   opacity: 1
+}
+
+.WeatherHistory{
+
+   width: 100%;
+   flex-grow: 1;
+
+   display: flex;
+   flex-direction: column;
+
+   h3, h4 {
+      margin-top: 0px;
+   }
+
+   h4.sort-by{
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 0.9em;
+
+      label {
+         margin-left: 10px;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+
+         &:hover {
+            cursor: pointer;
+         }
+
+      }
+
+      input {
+         width: auto;
+         margin: 3px;
+      }
+
+      & .weather-history-icon {
+         height: 1.5em;
+         width: 1.5em;
+         margin-right: 5px;
+      }
+
+   } 
+
+   .content{
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 20px;
+   }
+
+   .menu {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h4 {
+         margin: 5px;
+         cursor: pointer;
+
+         &:hover {
+            text-decoration: underline;
+         }
+
+         &.active {
+            text-decoration: underline;
+            color: #00aedd;
+            cursor: auto;
+         }
+
+      }
+
+   }
+
+   figure{
+
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      margin: 0px;
+      border-left: 1px solid var(--foreground-color);
+
+      .positive{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         border-bottom: 1px solid var(--foreground-color);
+         height: 100%;
+         transition: height 1000ms;
+      }
+
+      .negative{
+         height: 0%;
+         padding-bottom: 0px;
+         transition: height 1000ms;
+      }
+
+
+      .column {
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+         // width: calc(1/12 * 100%);
+
+         &:first-of-type{
+            margin-left: 10px;
+         }
+         &:last-of-type{
+            margin-right: 10px;
+         }
+      }
+
+      .bar {
+         position: absolute;
+         bottom: 0px;
+         display: flex;
+         justify-content: center;
+         width: 80%;
+         max-width: 40px;
+         min-width: 20px;
+         height: 75%;
+         border: 1px solid var(--foreground-color);
+         border-bottom: none;
+         background-color: var(--nice-blue);
+         transition: height 1000ms, background-color 1000ms, bottom 1000ms;
+      }
+
+      .value {
+         position: absolute;
+         top: -20px;
+      }
+
+      .data-name, .not-available{
+
+         // For when bars are shorter than labels:
+         position: absolute;
+         bottom: -15px;
+         left: -25px;
+         white-space: nowrap;
+
+         display: flex;
+         align-items: center;
+         padding-top: 20px;
+         margin: 0px;
+         writing-mode: tb-rl;
+         transform: rotate(-180deg);
+      }
+
+      .not-available{
+         position: static;
+         padding-top: 10px;
+         color: white;
+      }
+
+      .short-name{
+         font-size: 0.8em;
+         position: absolute;
+         bottom: -1.5em;
+      }
+
+      .date-reference {
+         position: absolute;
+         top: -45px;
+         left: 10px;
+         transform: rotate(-30deg);
+         font-family: monospace;
+         color: #b40000;
+      }
+
+
+   }
+
+   .too-far-icon{
+      font-size: 0.9em;
+      margin-left: -3px;
+      color: var(--sun-color);
+      cursor: pointer;
+   }
+
+   .too-far-warning {
+      color: var(--foreground-color);
+      background-color: var(--background-color);
+      border: 1px solid var(--foreground-color);
+      font-size: 0.8em;
+      font-weight: normal;
+      max-width: 350px;
+      padding: 20px;
+      pointer-events: none;
+      box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4)
+   }
+
+
+
+}

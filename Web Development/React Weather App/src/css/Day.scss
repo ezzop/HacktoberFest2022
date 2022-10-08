@@ -1,0 +1,178 @@
+/* ---------- Parent Container Styles ---------- */
+
+.Day{
+   width: calc(1/8 * 100%);
+   border: 1px solid var(--foreground-color);
+   margin: 0px;
+   cursor: pointer;
+   opacity: 1;
+   transition: width 500ms, opacity 500ms 500ms;
+
+   &.expanded{
+      width: 100%;
+      transition: width 500ms;
+   }
+
+   &.faded{
+      background-color: lightgrey;
+      width: 0%;
+      border: 0px solid black;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 500ms;
+   }
+   
+}
+
+
+
+
+/* ---------- Summary Styles ---------- */
+
+.Day.expanded .summaryDay{
+   display: none;
+}
+
+.summaryDay{
+   height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+
+   // .cardIndex{
+   //    width: 100%;
+   //    position: absolute;
+   //    top: 0px;
+   //    left: 0px;
+   // }
+
+   h2{
+      text-align: center;
+   }
+
+   h2.date{
+      margin: 0px;
+   }
+
+   .weatherIcon{
+      text-align: center;
+   }
+
+   .maxTemp{
+      padding: 0px;
+      margin: 0px;
+      font-size: 1.4em;
+   }
+
+   .clickme-overlay {
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--foreground-color);
+      transition: opacity 250ms;
+
+
+      &:hover {
+         opacity: 1;
+         transition: opacity 250ms;
+      }
+
+   }
+
+}
+
+
+
+
+
+/* ---------- Full Forecast Day Styles ---------- */
+
+.expandedDay{
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: auto 1fr;
+   grid-gap: 10px;
+   position: relative;
+   height: 100%;
+   padding: 25px;
+
+   width: 0px;
+   overflow: hidden;
+   opacity: 0;
+   transition: opacity 500ms 20ms;
+
+}
+
+.Day.expanded .expandedDay{
+   width: 100%;
+   opacity: 1;
+   transition: width 250ms, opacity 500ms 250ms;
+
+   header{
+      grid-column: 0 / -1;
+      display: flex;
+      flex-direction: row;
+
+      h2{
+         margin: 0px;
+      }
+
+      .weatherIcon {
+         width: 150px;
+         margin: -25px 0px -25px -25px;
+      }
+
+   }
+
+   section.details{
+
+      grid-column: 2 / -1;
+      grid-row: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      min-width: 250px;
+      margin-left: 10%;
+
+      p {
+         margin: 3px;
+
+         &:last-of-type {
+            margin-bottom: 30px;
+         }
+      }
+
+      .temp{
+         font-size: 1.6em;
+      }
+
+      .icon-value-pair {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+      }
+
+      .sunriseIcon {
+         width: 54px;
+         height: 54px;
+      }
+      .Moon.sunriseIcon {
+         width: 50px;
+         height: 50px;
+      }
+
+
+   }
+
+
+
+}

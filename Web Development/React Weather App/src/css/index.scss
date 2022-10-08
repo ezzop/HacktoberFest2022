@@ -1,0 +1,369 @@
+@import './variables.css';
+
+// pretty good article on theming with react and sass: https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1
+
+html {
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   color: var(--foreground-color);
+   background-color: var(--background-color);
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+html, body, #root, #app{
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+.App{
+   height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 30px 200px;
+   padding-bottom: 50px;
+}
+
+@media (max-width: 1186px) {
+   .App{
+      padding: 30px 125px 50px 125px;
+   }
+}
+
+@media (max-width: 968px) {
+   .App{
+      padding: 30px 80px 50px 80px;
+   }
+}
+
+a, a:visited{
+   color: inherit;
+   text-decoration: none;
+   color: rgb(0, 174, 221);
+
+}
+a:hover{
+   border-bottom: 1px solid rgb(0, 174, 221);
+}
+
+/*---------------------------------------------------
+THEME STYLES
+---------------------------------------------------*/
+.ThemeChanger{
+   position: absolute;
+   top: 0px;
+   right: 20px;
+}
+
+.ThemeChanger h5{
+   display: inline-block;
+}
+
+.ThemeChanger h5:hover{
+   border-bottom: 1px solid var(--foreground-color);
+   cursor: pointer;
+}
+
+
+/*---------------------------------------------------
+HEADER STYLES
+---------------------------------------------------*/
+.LogoHeader{
+   display: flex;
+   justify-content: space-around;
+   max-height: 100%;
+   transition: max-height 0.5s;
+}
+
+.LogoHeader.step-aside{
+   max-height: 0%;
+   overflow: hidden;
+}
+
+.LogoHeader * {
+   width: 100px;
+}
+
+.LogoHeader .icon {
+   margin-right: 30px;
+   margin-top: -20px;
+}
+
+.slowSpin {
+	animation: rotationClockwise 20s infinite linear;
+}
+.slowSpin:last-of-type{
+   animation: rotationCounterClockwise 20s infinite linear;
+}
+
+@keyframes rotationCounterClockwise {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-359deg);
+	}
+}
+
+@keyframes rotationClockwise {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+
+
+/*---------------------------------------------------
+FORM STYLES
+---------------------------------------------------*/
+
+form.locator{
+   width: 100%;
+   margin: 20px 0px 0px 0px;
+}
+form.locator h2{
+   text-align: left;
+   margin: 5px;
+}
+
+input{
+   width: 55%;
+   margin-bottom: 20px;
+   padding: 0.5em;
+   font-size: 1.2em;
+   border: 1px solid var(--foreground-color);
+   background-color: var(--background-color);
+   color: var(--foreground-color);
+}
+input:last-of-type{
+   width: 35%;
+   margin-left: 10%
+}
+
+input:-webkit-autofill {
+   box-shadow:0 0 0 500px var(--background-color) inset;
+   -webkit-box-shadow:0 0 0 500px var(--background-color) inset; /* Change the color to your own background color */
+   -webkit-text-fill-color: var(--foreground-color);
+}
+
+input:-webkit-autofill:focus {
+   box-shadow:0 0 0 500px var(--background-color) inset;
+   -webkit-box-shadow: 0 0 0 500px var(--background-color) inset;/*your box-shadow*/
+   -webkit-text-fill-color: var(--foreground-color);
+} 
+
+
+/*---------------------------------------------------
+FORECAST STYLES
+---------------------------------------------------*/
+
+#forecast{
+   width: 100%;
+   height: 45%;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   .Week{
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      margin-top: 15px;
+      position: relative;
+   }
+
+   h3{
+      margin: 0px;
+   }
+
+   h5{
+      margin: 5px 0px;
+   }
+
+   h5.history-title {
+      margin: 10px 0px;
+      display: flex;
+      // justify-content: flex-end;
+      align-items: flex-end;
+   }
+
+   .weather-history-icon {
+      width: 1.5em;
+      height: 1.5em;
+      transform: rotate(90deg) scaleX(-1);
+      -webkit-transform: rotate(90deg) scaleX(-1);
+      margin: 0px 10px 0px 2px;
+   }
+
+   p.summary{
+      text-align: center;
+      text-transform: capitalize;
+   }
+
+}
+
+.forecast-enter, .forecast-appear{
+   opacity: 0
+}
+.forecast-enter-active, .forecast-appear-active{
+   opacity: 1;
+   transition: opacity 500ms;
+}
+.forecast-enter-done{
+   opacity: 1
+}
+
+
+
+
+
+/*---------------------------------------------------
+LOCATION LIST STYLES
+---------------------------------------------------*/
+.location-list{
+   width: 100%;
+   margin-bottom: 100px;
+}
+.location-result{
+   padding: 10px;
+   margin: 5px 0px;
+   cursor: pointer;
+}
+.location-result{
+   background-color: var(--background-color);
+   border: 1px solid var(--foreground-color);
+
+}
+.location-result:hover{
+   border: 1px solid #00aedd;
+   text-decoration: underline;
+}
+.location-list h4{
+   margin-top: 0;
+}
+
+.location-result.current-selection{
+   border: 1px solid #00aedd;
+}
+.location-list h5.current-selection{
+   color: #00aedd;
+   margin: 0;
+   float: right;
+}
+
+/*---------------------------------------------------
+ERROR STYLES
+---------------------------------------------------*/
+
+.Error {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+h3.error{
+   font-weight: lighter;
+}
+
+.error span{
+   text-transform: lowercase;
+}
+
+.warning-icon {
+   width: 150px;
+   height: 150px;
+   margin: 20px;
+}
+
+.error-transition-enter, .error-transition-appear{
+   opacity: 0
+}
+.error-transition-enter-active, .error-transition-appear-active{
+   opacity: 1;
+   transition: opacity 500ms;
+}
+.error-transition-enter-done{
+   opacity: 1
+}
+
+
+/*---------------------------------------------------
+FOOTER STYLES
+---------------------------------------------------*/
+footer{
+   position: absolute;
+   bottom: 5px;
+
+   p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 0.8em;
+      margin: 5px;
+
+      a.footer-link {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin: 0px 10px;
+         color: var(--foreground-color)
+      }
+
+      a.footer-link:hover{
+         border-bottom: none;
+         color: #00aedd
+      }
+
+      img {
+         margin-right: 5px;
+      }
+   }
+}
+
+
+.BackButton {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   margin: 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+   &:hover {
+      cursor: pointer;
+
+      h3 {
+         opacity: 1;
+         transition: opacity 250ms;
+      }
+
+   }
+
+   h3 {
+      opacity: 0;
+      transition: opacity 250ms;
+   }
+
+   svg {
+      font-size: 3em;
+      margin: 10px;
+   }
+
+}
+
+@media (max-width: 1186px) {
+   .BackButton h3 span {
+      display: none
+   }
+}
