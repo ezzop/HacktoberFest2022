@@ -1,0 +1,98 @@
+:root {
+  --starthours: 7;
+  --startmin: 20;
+  --startsec: 45;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.wrap {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.clock {
+  height: 400px;
+  width: 400px;
+  box-shadow: 20px 20px 15px 5px rgba(0,0,0,0.7);
+-webkit-box-shadow: 20px 20px 15px 5px rgba(0,0,0,0.7);
+-moz-box-shadow: 20px 20px 15px 5px rgba(0,0,0,0.7);
+  border-radius: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seconds {
+  height: 180px;
+  width: 0px;
+  border: 5px solid blue;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  animation: sec 60s steps(60) infinite;
+  transform-origin: top;
+}
+.minutes {
+  height: 150px;
+  width: 0px;
+  border: 5px solid blue;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  animation: min 3600s steps(60) infinite;
+  transform-origin: top;
+}
+.hours {
+  height: 120px;
+  width: 0px;
+  border: 5px solid blue;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  animation: hr calc(12 * 60 * 60s) steps(60) infinite;
+  transform-origin: top;
+}
+.dot {
+  width: 0px;
+  border: 10px solid blue;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes sec {
+  from {
+    transform: rotate(calc(var(--startsec) * 1deg));
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes min {
+  from {
+    transform: rotate(calc(var(--startmin) * 6deg));
+  }
+  to {
+    transform: rotate(calc(var(--startmin) * 6deg+360deg));
+  }
+}
+@keyframes hr {
+  from {
+    transform: rotate(calc(var(--starthours) * 30deg));
+  }
+  to {
+    transform: rotate(calc(var(--starthours) * 30deg+360deg));
+  }
+}
