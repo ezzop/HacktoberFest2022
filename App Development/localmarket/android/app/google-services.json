@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "774889134474",
+    "project_id": "localmarket-96782",
+    "storage_bucket": "localmarket-96782.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774889134474:android:fcaa8acb549552836a5073",
+        "android_client_info": {
+          "package_name": "com.example.localmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774889134474-posq3g70o41rdm6gl0lv0dtg0bruqc68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.localmarket",
+            "certificate_hash": "2bcb1f0437499969a98d9378e3b724a5dbd449c8"
+          }
+        },
+        {
+          "client_id": "774889134474-5icn9rfv34hh58vgi9k2im35vhi7m0sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdbDVVgtsXmlkS-8TP6-xqq8qwGsV5qhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774889134474-5icn9rfv34hh58vgi9k2im35vhi7m0sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
