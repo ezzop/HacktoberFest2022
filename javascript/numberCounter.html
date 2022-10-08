@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: lightblue;
+        }
+        .counter{
+            width: 400px;
+            text-align: center;
+            background: coral;
+            padding: 40px;
+            margin: 100px auto;
+        }
+        #meter{
+            padding: 10px;
+            margin: 10px auto;
+            background: lightcyan;
+            color: #202020;
+            font-size: 70px;
+        }
+        button{
+            padding: 5px;
+            font-size: 18px;
+            margin: 10px;
+            color: white;
+            background: none; outline: none;
+            border: 2px solid darkblue;
+            border-radius: 5px;
+            box-shadow: 3px 3px darkblue;
+        }
+        button:active{
+            transform: translate(3px,3px);
+            box-shadow: 1px 1px darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <div id="meter">0</div>
+
+        <button onclick="upper()" id="up">INCREASE &blacktriangle;</button>
+        <button onclick="reset()" id="reset">RESET</button>
+        <button onclick="lower()" id="down">DECREASE &blacktriangledown;</button>
+    </div>
+
+    <script>
+        var counter = document.getElementById('meter');
+        var down = document.getElementById('down');
+        var i = 0;
+        function upper(){
+            counter.innerHTML = ++i;
+            if(i<0){
+            counter.style.color = 'red';
+            }
+            if(i>0){
+            counter.style.color = 'green';
+            }
+        }
+        function lower(){
+            counter.innerHTML = --i;
+            if(i<0){
+            counter.style.color = 'red';
+            }
+            if(i>0){
+            counter.style.color = 'green';
+            }
+        }
+        function reset(){
+            counter.innerHTML = 0;
+            counter.style.color = '#202020';
+            i=0;
+        }
+
+    </script>
+</body>
+</html>
