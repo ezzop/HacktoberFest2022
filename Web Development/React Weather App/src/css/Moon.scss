@@ -1,0 +1,33 @@
+.Moon{
+
+   border-radius: 50%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   transform: rotate(10deg);
+
+   .outline{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border: 3px solid var(--foreground-color);
+      border-radius: 50%;
+   }
+
+   .shadow{
+      position: absolute;
+      left: 50%;
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      background-color: var(--background-color);
+      border: 3px solid var(--foreground-color);
+      z-index: 5;
+   }
+
+
+
+}
